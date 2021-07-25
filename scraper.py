@@ -67,7 +67,7 @@ def get_tags(link, current, total):
     
     tags['parodies'] = ' '.join(['<'+x+'>' for x in tags['parodies'][:6]])
     tags['characters'] = ' '.join(['<'+x+'>' for x in tags['characters'][:6]])
-    tags['tags'] = ' '.join(['<'+x+'>' if x != 'multi-work ' else x.replace('multi-work ', '') for x in tags['tags'][:6]])
+    tags['tags'] = ' '.join(['<'+x+'>' if x != 'multi-work series' else '<'+x.replace('multi-work ', '')+'>' for x in tags['tags'][:6]])
     tags['artists'] = ' '.join(['<'+x+'>' for x in tags['artists'][:6]])
     tags['groups'] = ' '.join(['<'+x+'>' for x in tags['groups'][:6]])
     tags['languages'] = ' '.join(['<'+x+'>' for x in tags['languages'][:6]])
