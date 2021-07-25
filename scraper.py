@@ -3,7 +3,7 @@ import re
 from selenium import webdriver
 import os
 import sys
-os.chdir(r'C:/Users/guilo/Documents/Atom_Projects/Python/reddit')
+os.chdir(r'C:/path/to/this/file')
 os.system('cls' if os.name == 'nt' else 'clear')
 
 print('''
